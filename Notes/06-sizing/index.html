@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Sizing</title>
+</head>
+<body class="bg-slate-100 text-slate-900">
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+    <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+      <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Sizing</h1>
+      <p class="mt-2 text-slate-600">Sizing utilities control width and height with scale values, percentages, and viewport units.</p>
+    </header>
+
+    <!-- Fixed width classes from spacing scale -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">1) Fixed Width</h2>
+      <div class="space-y-2 text-white text-sm">
+        <div class="bg-slate-700 w-12 rounded px-2 py-1">w-12</div>
+        <div class="bg-slate-700 w-24 rounded px-2 py-1">w-24</div>
+        <div class="bg-slate-700 w-32 rounded px-2 py-1">w-32</div>
+        <div class="bg-slate-700 w-48 rounded px-2 py-1">w-48</div>
+        <div class="bg-slate-700 w-64 rounded px-2 py-1">w-64</div>
+        <div class="bg-slate-700 w-96 rounded px-2 py-1">w-96</div>
+      </div>
+    </section>
+
+    <!-- Fractional widths are useful for responsive layouts -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">2) Fractional Width</h2>
+      <div class="space-y-2 text-white text-sm">
+        <div class="bg-emerald-600 w-1/2 rounded px-2 py-1">w-1/2</div>
+        <div class="bg-emerald-600 w-1/3 rounded px-2 py-1">w-1/3</div>
+        <div class="bg-emerald-600 w-2/3 rounded px-2 py-1">w-2/3</div>
+        <div class="bg-emerald-600 w-3/4 rounded px-2 py-1">w-3/4</div>
+      </div>
+    </section>
+
+    <!-- Full and viewport width helpers -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">3) Full, Screen, Min, Max</h2>
+      <div class="space-y-2 text-white text-sm">
+        <div class="bg-indigo-600 w-full rounded px-2 py-1">w-full</div>
+        <div class="bg-indigo-700 w-screen rounded px-2 py-1">w-screen</div>
+        <div class="bg-indigo-800 w-min rounded px-2 py-1 inline-block">w-min content</div>
+        <div class="bg-indigo-900 w-max rounded px-2 py-1 inline-block">w-max content width example</div>
+      </div>
+    </section>
+
+    <!-- Arbitrary width is useful for custom values -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">4) Arbitrary Width</h2>
+      <div class="bg-rose-600 text-white rounded px-3 py-2 w-[300px]">w-[300px]</div>
+    </section>
+
+    <!-- Max width keeps text readable -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">5) Max Width</h2>
+      <article class="bg-slate-100 max-w-lg mx-auto rounded p-4 border border-slate-300">
+        max-w-lg keeps line length readable and prevents very wide paragraph blocks.
+      </article>
+    </section>
+
+    <!-- Height utilities often pair with flex/grid alignment -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">6) Height Utilities</h2>
+      <div class="flex items-end gap-3">
+        <div class="bg-orange-400 w-16 h-24 rounded text-center">h-24</div>
+        <div class="bg-orange-500 w-16 h-32 rounded text-center">h-32</div>
+        <div class="bg-orange-600 w-16 h-40 rounded text-center">h-40</div>
+        <div class="bg-orange-700 w-16 h-48 rounded text-center text-white">h-48</div>
+      </div>
+      <div class="h-24 bg-orange-100 rounded p-2 mt-4">
+        <div class="h-40 max-h-full bg-orange-500 rounded text-white px-2 py-1">max-h-full</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

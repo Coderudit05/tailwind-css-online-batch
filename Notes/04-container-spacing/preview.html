@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Container and Spacing</title>
+</head>
+
+<body class="bg-slate-100 text-slate-900">
+  <main class="container mx-auto px-4 py-8 space-y-8">
+    <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+      <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Container and Spacing</h1>
+      <p class="mt-2 text-slate-600">
+        This page demonstrates practical spacing utilities in Tailwind using small, focused examples.
+      </p>
+    </header>
+
+    <!-- Container keeps content centered and adjusts max-width at breakpoints -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">1) Container Utility</h2>
+      <p class="text-sm text-slate-600">The wrapper uses container + mx-auto for centered responsive layout.</p>
+      <article class="bg-slate-200 rounded-lg p-4 border border-slate-300">
+        <h3 class="text-lg font-semibold">Article One</h3>
+        <p class="mt-2 text-slate-700">
+          Container creates a responsive max-width. As screen size grows, content width expands at defined breakpoints.
+        </p>
+      </article>
+      <div class="grid gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-sky-100 rounded px-3 py-2">sm: 640px</div>
+        <div class="bg-cyan-100 rounded px-3 py-2">md: 768px</div>
+        <div class="bg-emerald-100 rounded px-3 py-2">lg: 1024px</div>
+        <div class="bg-lime-100 rounded px-3 py-2">xl: 1280px</div>
+        <div class="bg-amber-100 rounded px-3 py-2">2xl: 1536px</div>
+      </div>
+    </section>
+
+    <!-- Margin controls outer spacing around an element -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">2) Margin Utilities</h2>
+      <div class="space-y-2 text-white font-medium">
+        <div class="m-4 bg-slate-500 rounded px-3 py-2">m-4 (all sides)</div>
+        <div class="mx-4 bg-slate-600 rounded px-3 py-2">mx-4 (left and right)</div>
+        <div class="my-4 bg-slate-700 rounded px-3 py-2">my-4 (top and bottom)</div>
+        <div class="mt-6 bg-slate-800 rounded px-3 py-2">mt-6 (top)</div>
+        <div class="mb-8 bg-slate-900 rounded px-3 py-2">mb-8 (bottom)</div>
+      </div>
+      <div class="ml-[200px] bg-indigo-600 text-white rounded px-3 py-2 inline-block">
+        ml-[200px] (arbitrary margin value)
+      </div>
+    </section>
+
+    <!-- Padding controls inner spacing inside an element -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">3) Padding Utilities</h2>
+      <div class="grid gap-3 sm:grid-cols-2 text-white font-medium">
+        <div class="p-4 bg-blue-500 rounded">p-4 (all sides)</div>
+        <div class="px-4 bg-blue-600 rounded">px-4 (left and right)</div>
+        <div class="py-4 bg-blue-700 rounded">py-4 (top and bottom)</div>
+        <div class="pt-6 bg-blue-800 rounded">pt-6 (top)</div>
+        <div class="pr-4 bg-blue-900 rounded">pr-4 (right)</div>
+        <div class="pl-2 bg-cyan-700 rounded">pl-2 (left)</div>
+      </div>
+    </section>
+
+    <!-- space-x adds equal horizontal gap between direct children -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">4) Space Between X</h2>
+      <div class="flex space-x-4">
+        <div class="p-3 bg-rose-200 rounded">01</div>
+        <div class="p-3 bg-rose-300 rounded">02</div>
+        <div class="p-3 bg-rose-400 rounded">03</div>
+      </div>
+    </section>
+
+    <!-- space-y adds equal vertical gap between direct children -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">5) Space Between Y</h2>
+      <div class="flex flex-col space-y-4 max-w-xs">
+        <div class="p-3 bg-emerald-200 rounded">01</div>
+        <div class="p-3 bg-emerald-300 rounded">02</div>
+        <div class="p-3 bg-emerald-400 rounded">03</div>
+      </div>
+    </section>
+
+    <!-- Responsive spacing is a common real-world pattern -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold text-slate-800">6) Responsive Spacing Example</h2>
+      <p class="text-slate-600">This box uses p-3 on small screens, p-6 on medium, and p-10 on large screens.</p>
+      <div class="bg-slate-50 rounded border border-slate-300 p-3 sm:p-6 lg:p-10">
+        Try resizing the browser to see spacing changes.
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

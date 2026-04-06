@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Layout and Position</title>
+</head>
+<body class="bg-slate-100 text-slate-900">
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+    <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+      <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Layout and Position</h1>
+      <p class="mt-2 text-slate-600">Position, display, z-index, and float utilities help place elements in predictable ways.</p>
+    </header>
+
+    <!-- Relative parent with absolute child -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">1) Relative and Absolute</h2>
+      <div class="relative h-28 bg-red-100 rounded border border-red-300 p-2">
+        <p>Relative parent</p>
+        <div class="absolute bottom-2 right-2 bg-red-500 text-white rounded px-3 py-1">Absolute child</div>
+      </div>
+    </section>
+
+    <!-- Corner placement using top/right/bottom/left -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">2) Corner Positioning</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="relative h-28 bg-yellow-100 rounded"><div class="absolute top-0 left-0 bg-yellow-400 rounded px-2 py-1">top-left</div></div>
+        <div class="relative h-28 bg-yellow-100 rounded"><div class="absolute top-0 right-0 bg-yellow-400 rounded px-2 py-1">top-right</div></div>
+        <div class="relative h-28 bg-yellow-100 rounded"><div class="absolute bottom-0 left-0 bg-yellow-400 rounded px-2 py-1">bottom-left</div></div>
+        <div class="relative h-28 bg-yellow-100 rounded"><div class="absolute bottom-0 right-0 bg-yellow-400 rounded px-2 py-1">bottom-right</div></div>
+      </div>
+    </section>
+
+    <!-- Display modes change how elements flow in layout -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">3) Display Utilities</h2>
+      <p>
+        <span class="inline bg-cyan-100">inline</span>
+        <span class="inline-block bg-cyan-200 px-2">inline-block</span>
+        <span class="block bg-cyan-300 mt-2 px-2">block</span>
+        <span class="hidden">hidden</span>
+      </p>
+    </section>
+
+    <!-- z-index controls stacking order -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">4) Z-Index</h2>
+      <div class="relative h-36">
+        <div class="absolute left-8 top-3 w-24 h-24 bg-blue-200 rounded z-10">z-10</div>
+        <div class="absolute left-16 top-6 w-24 h-24 bg-blue-400 rounded z-40">z-40</div>
+        <div class="absolute left-24 top-9 w-24 h-24 bg-blue-600 text-white rounded z-20">z-20</div>
+      </div>
+    </section>
+
+    <!-- Float is legacy but still useful in specific text-wrapping cases -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">5) Float</h2>
+      <div class="overflow-auto bg-slate-50 rounded border border-slate-300 p-3">
+        <div class="float-right w-24 h-24 bg-emerald-300 rounded ml-3 mb-2"></div>
+        <p>
+          This paragraph wraps around the floated box on the right. Float utilities are less common in modern layouts,
+          but they are still helpful for text wrapping effects.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

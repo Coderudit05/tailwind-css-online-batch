@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Colors and Backgrounds</title>
+</head>
+
+<body class="bg-slate-100 text-slate-900">
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+        <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+            <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Colors and Backgrounds</h1>
+            <p class="mt-2 text-slate-600">
+                This page demonstrates practical color utilities in Tailwind using small, focused examples.
+            </p>
+        </header>
+
+        <!-- Text color scale: same hue with increasing intensity from 50 to 900 -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-2">
+            <h2 class="text-xl font-semibold text-slate-800">1) Text Color Scale</h2>
+            <p class="text-sm text-slate-600">Use <code>text-color-shade</code> to control readability and emphasis.</p>
+            <div class="space-y-1">
+                <p class="text-red-50 bg-red-900 px-2 py-1 rounded">text-red-50</p>
+                <p class="text-red-100">text-red-100</p>
+                <p class="text-red-200">text-red-200</p>
+                <p class="text-red-300">text-red-300</p>
+                <p class="text-red-400">text-red-400</p>
+                <p class="text-red-500">text-red-500</p>
+                <p class="text-red-600">text-red-600</p>
+                <p class="text-red-700">text-red-700</p>
+                <p class="text-red-800">text-red-800</p>
+                <p class="text-red-900">text-red-900</p>
+            </div>
+        </section>
+
+        <!-- Background color examples with matching text contrast -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">2) Background Colors</h2>
+            <div class="grid gap-3 sm:grid-cols-3">
+                <div class="bg-slate-700 text-white rounded-lg p-4">bg-slate-700</div>
+                <div class="bg-zinc-400 text-slate-900 rounded-lg p-4">bg-zinc-400</div>
+                <div class="bg-emerald-600 text-white rounded-lg p-4">bg-emerald-600</div>
+            </div>
+        </section>
+
+        <!-- Decoration colors can be independent from text color -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-2">
+            <h2 class="text-xl font-semibold text-slate-800">3) Underline and Decoration Colors</h2>
+            <p class="underline decoration-2 text-red-700 decoration-red-500">Underline in a different red shade</p>
+            <p class="underline decoration-wavy text-blue-700 decoration-cyan-500">Wavy underline with cyan decoration
+            </p>
+        </section>
+
+        <!-- Border utilities are useful for form states and cards -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">4) Border Colors</h2>
+            <div class="grid gap-3 sm:grid-cols-2">
+                <input class="border-2 border-rose-500 rounded px-3 py-2" placeholder="border-rose-500" />
+                <input class="border-2 border-blue-300 rounded px-3 py-2" placeholder="border-blue-300" />
+                <input class="border-2 border-purple-900 rounded px-3 py-2" placeholder="border-purple-900" />
+                <input class="border-2 border-yellow-500 rounded px-3 py-2" placeholder="border-yellow-500" />
+            </div>
+        </section>
+
+        <!-- divide-* applies separator color between direct children -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">5) Divide Colors</h2>
+            <div class="rounded-lg border border-slate-200 divide-y divide-blue-300">
+                <div class="p-3">Item 1</div>
+                <div class="p-3">Item 2</div>
+                <div class="p-3">Item 3</div>
+                <div class="p-3">Item 4</div>
+            </div>
+        </section>
+
+        <!-- Outline color is separate from border and often used for focus states -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">6) Outline Colors</h2>
+            <div class="flex flex-wrap gap-3">
+                <button class="px-4 py-2 rounded bg-white outline outline-2 outline-blue-500">Blue Outline</button>
+                <button class="px-4 py-2 rounded bg-white outline outline-2 outline-purple-400">Purple Outline</button>
+                <button class="px-4 py-2 rounded bg-white outline outline-2 outline-gray-500">Gray Outline</button>
+            </div>
+        </section>
+
+        <!-- shadow-color/opacity lets you tune depth and mood -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">7) Colored Shadows</h2>
+            <div class="flex flex-wrap gap-4">
+                <button class="px-4 py-2 rounded text-white bg-cyan-500 shadow-lg shadow-cyan-500/60">Cyan
+                    Shadow</button>
+                <button class="px-4 py-2 rounded text-white bg-blue-500 shadow-lg shadow-blue-500/50">Blue
+                    Shadow</button>
+                <button class="px-4 py-2 rounded text-white bg-indigo-500 shadow-lg shadow-indigo-500/50">Indigo
+                    Shadow</button>
+            </div>
+        </section>
+
+        <!-- accent-* changes native form control highlight color -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">8) Accent Colors</h2>
+            <div class="space-y-2">
+                <label class="block"><input type="checkbox" class="accent-purple-500" checked /> Accent Purple</label>
+                <label class="block"><input type="checkbox" class="accent-pink-500" checked /> Accent Pink</label>
+                <label class="block"><input type="checkbox" class="accent-red-300" checked /> Accent Red</label>
+            </div>
+        </section>
+
+        <!-- Arbitrary values are useful when brand colors are not in the default palette -->
+        <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+            <h2 class="text-xl font-semibold text-slate-800">9) Arbitrary Colors</h2>
+            <div class="space-y-2">
+                <div class="bg-[#427fab] text-white rounded px-3 py-2">bg-[#427fab]</div>
+                <div class="text-[#427fab] font-semibold">text-[#427fab]</div>
+                <div class="border-2 border-[#427fab] rounded px-3 py-2">border-[#427fab]</div>
+            </div>
+        </section>
+
+        <!-- Extra background example: gradient background utility -->
+        <section class="rounded-xl p-6 text-white shadow-sm bg-gradient-to-r from-sky-500 via-cyan-500 to-emerald-500">
+            <h2 class="text-xl font-semibold">10) Gradient Background</h2>
+            <p class="mt-1">Use <code>bg-gradient-to-*</code> with <code>from-*</code>, <code>via-*</code>, and
+                <code>to-*</code>.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

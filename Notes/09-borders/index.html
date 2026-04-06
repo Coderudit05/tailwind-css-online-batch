@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Borders</title>
+</head>
+<body class="bg-slate-100 text-slate-900">
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+    <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+      <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Borders</h1>
+      <p class="mt-2 text-slate-600">Border utilities shape boundaries, focus states, and card style consistency.</p>
+    </header>
+
+    <!-- Border width and color control visual emphasis -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">1) Border Width and Color</h2>
+      <div class="space-y-3">
+        <div class="p-4 rounded border">border</div>
+        <div class="p-4 rounded border-2 border-blue-500">border-2 border-blue-500</div>
+        <div class="p-4 rounded border-4 border-red-500">border-4 border-red-500</div>
+        <div class="p-4 rounded border-x-4 border-zinc-500">border-x-4 border-zinc-500</div>
+        <div class="p-4 rounded border-y-4 border-zinc-500">border-y-4 border-zinc-500</div>
+        <div class="p-4 rounded border-l-4 border-emerald-600">border-l-4 border-emerald-600</div>
+      </div>
+    </section>
+
+    <!-- Radius values round corners from subtle to pill/circle style -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">2) Border Radius</h2>
+      <div class="grid gap-3 sm:grid-cols-2">
+        <div class="bg-slate-200 p-4 rounded">rounded</div>
+        <div class="bg-slate-200 p-4 rounded-lg">rounded-lg</div>
+        <div class="bg-slate-200 p-4 rounded-xl">rounded-xl</div>
+        <div class="bg-slate-200 p-4 rounded-2xl">rounded-2xl</div>
+        <div class="bg-slate-200 p-4 rounded-3xl">rounded-3xl</div>
+        <div class="bg-slate-200 p-4 rounded-full text-center">rounded-full</div>
+      </div>
+    </section>
+
+    <!-- Side-specific radius supports cards and tab-like interfaces -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">3) Side-Specific Radius</h2>
+      <div class="space-y-3">
+        <div class="bg-slate-200 p-4 rounded-t-xl">rounded-t-xl</div>
+        <div class="bg-slate-200 p-4 rounded-b-xl">rounded-b-xl</div>
+      </div>
+    </section>
+
+    <!-- Outline is separate from border and commonly used for focus -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">4) Outline</h2>
+      <div class="flex flex-wrap gap-3">
+        <button class="px-4 py-2 rounded bg-white outline outline-1 outline-offset-2">outline-1</button>
+        <button class="px-4 py-2 rounded bg-white outline outline-2 outline-blue-500 outline-offset-2">outline-2</button>
+        <button class="px-4 py-2 rounded bg-white outline outline-4 outline-rose-500 outline-offset-2">outline-4</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Backgrounds and Shadows</title>
+</head>
+<body class="bg-slate-100 text-slate-900">
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+    <header class="rounded-xl bg-white p-6 shadow-sm border border-slate-200">
+      <h1 class="text-3xl font-bold text-slate-800">Tailwind CSS: Backgrounds and Shadows</h1>
+      <p class="mt-2 text-slate-600">Background and shadow utilities create depth, focus, and visual atmosphere.</p>
+    </header>
+
+    <!-- Background image settings with cover, no-repeat, and center -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">1) Background Image and Position</h2>
+      <div class="h-56 rounded-lg bg-cover bg-center bg-no-repeat border border-slate-300"
+           style="background-image: linear-gradient(135deg, #0ea5e9, #22c55e);">
+      </div>
+      <p class="text-sm text-slate-600">Use bg-cover + bg-center to keep visuals balanced.</p>
+    </section>
+
+    <!-- Gradient utilities for smooth color transitions -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">2) Gradients</h2>
+      <div class="h-20 rounded bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+      <div class="h-20 rounded bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+    </section>
+
+    <!-- Box shadows define elevation levels -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">3) Shadow Scale</h2>
+      <div class="grid gap-3 sm:grid-cols-2">
+        <div class="p-4 rounded bg-white shadow-md border border-slate-100">shadow-md</div>
+        <div class="p-4 rounded bg-white shadow-lg border border-slate-100">shadow-lg</div>
+        <div class="p-4 rounded bg-white shadow-xl border border-slate-100">shadow-xl</div>
+        <div class="p-4 rounded bg-white shadow-2xl border border-slate-100">shadow-2xl</div>
+      </div>
+    </section>
+
+    <!-- Colored shadows create energetic highlight effects -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">4) Shadow Colors</h2>
+      <div class="flex flex-wrap gap-4">
+        <button class="px-4 py-2 rounded bg-blue-500 text-white shadow-xl shadow-blue-500/50">Blue Shadow</button>
+        <button class="px-4 py-2 rounded bg-red-500 text-white shadow-xl shadow-red-500/60">Red Shadow</button>
+      </div>
+    </section>
+
+    <!-- Mix-blend utilities combine overlapping layers -->
+    <section class="rounded-xl bg-white p-6 shadow-sm border border-slate-200 space-y-3">
+      <h2 class="text-xl font-semibold">5) Mix Blend</h2>
+      <div class="flex justify-center -space-x-8">
+        <div class="w-24 h-24 rounded-full bg-blue-400 mix-blend-multiply"></div>
+        <div class="w-24 h-24 rounded-full bg-pink-400 mix-blend-multiply"></div>
+        <div class="w-24 h-24 rounded-full bg-yellow-400 mix-blend-multiply"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
