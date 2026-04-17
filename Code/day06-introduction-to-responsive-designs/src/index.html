@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Responsiveness</title>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/f12c1313f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="flex bg-gradient-to-b from-gray-700 via-gray-900 to-black justify-between items-center h-16 px-10"
+    >
+      <h1 class="text-3xl text-white cursor-pointer font-bold">
+        Bongo<span class="text-indigo-500">IT</span>
+      </h1>
+
+      <nav class="hidden md:flex gap-4 items-center text-lg text-white">
+        <a href="#" class="hover:text-indigo-500 transition-all duration-300"
+          >Home</a
+        >
+        <a href="#" class="hover:text-indigo-500 transition-all duration-300"
+          >About</a
+        >
+        <a href="#" class="hover:text-indigo-500 transition-all duration-300"
+          >Work</a
+        >
+        <a href="#" class="hover:text-indigo-500 transition-all duration-300"
+          >Testimonials</a
+        >
+        <a href="#" class="hover:text-indigo-500 transition-all duration-300"
+          >Services</a
+        >
+      </nav>
+
+      <div class="hidden md:flex items-center justify-center gap-4">
+        <button
+          class="px-4 py-2 bg-indigo-500 cursor-pointer rounded-lg text-white text-lg"
+        >
+          Login
+        </button>
+        <button
+          class="px-4 py-2 border-2 border-indigo-500 cursor-pointer rounded-lg text-lg text-white"
+        >
+          SignUp
+        </button>
+      </div>
+
+      <div class="flex md:hidden">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
+    </header>
+
+    <section class="min-h-screen py-10">
+      <div class="max-w-7xl mx-auto flex flex-col gap-6 px-6">
+        <h3
+          class="text-center bg-indigo-300 w-fit mx-auto rounded-full px-4 py-2 text-white text-lg cursor-pointer"
+        >
+          Our Services
+        </h3>
+        <h2 class="text-center text-5xl font-bold">
+          Solutions That Drive <span class="text-indigo-500">Results</span>
+        </h2>
+        <p
+          class="text-center text-xl text-black/50 capitalize max-w-3xl mx-auto"
+        >
+          We offer comprehensive IT services tailored to your business needs,
+          from concept to deployment and beyond.
+        </p>
+
+        <!-- <div class="flex flex-wrap gap-2 items-center justify-center">
+            <div class="h-70 w-70 border"></div>
+            <div class="h-70 w-70 border"></div>
+            <div class="h-70 w-70 border"></div>
+            <div class="h-70 w-70 border"></div>
+            <div class="h-70 w-70 border"></div>
+            <div class="h-70 w-70 border"></div>
+        </div> -->
+
+        <div class="grid md:grid-cols-2 md:grid-cols-3 gap-10 mx-auto ">
+          <div class="h-70 w-70 border"></div>
+          <div class="h-70 w-70 border"></div>
+          <div class="h-70 w-70 border"></div>
+          <div class="h-70 w-70 border"></div>
+          <div class="h-70 w-70 border"></div>
+          <div class="h-70 w-70 border"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
