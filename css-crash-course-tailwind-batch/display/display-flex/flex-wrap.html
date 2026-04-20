@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex row</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      .parent {
+        height: 100vh;
+        width: 100%;
+
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        flex-wrap: wrap;
+        /* overflow-x: auto; */
+        
+        
+      }
+
+      .child {
+        height: 300px;
+        width: 300px;
+        border: 2px solid orange;
+
+        /* flex-shrink: 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

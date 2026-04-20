@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display none</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-top: 20px;
+            background-color: yellowgreen;
+        }
+
+        .second-box{
+            display: none;
+            visibility: hidden;
+            background-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello I am box 1</div>
+    <div class="box second-box">Hello I am box 2</div>
+    <div class="box">Hello I am box 2</div>
+  </body>
+</html>

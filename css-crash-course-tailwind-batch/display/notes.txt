@@ -1,0 +1,20 @@
+block elements : they can change their height and width but still they will nver be on the same line as other elements. 
+they will always start on a new line and take up the full width available. 
+examples of block elements include <div>, <p>, <h1> to <h6>, <ul>, and <ol>.
+
+
+inline elements : they do not start on a new line and only take up as much width as necessary.
+but the condition is that they will never change their height and width by default.
+
+inline-block elements : they are a combination of block and inline elements. they can change their height and width but they will not start on a new line. 
+they will only take up as much width as necessary and they will allow other elements to be on the same line.
+examples of inline-block elements include <span>, <a>, and <img>.
+
+
+display none : it is a CSS property that can be applied to any element to hide it from the page. 
+when an element is set to display none, it will not take up any space on the page and will not be visible to the user.
+
+visibility hidden : it is a CSS property that can be applied to any element to hide it from the page. 
+when an element is set to visibility hidden, it will still take up space on the page but it will not be visible to the user.
+
+display flex : 

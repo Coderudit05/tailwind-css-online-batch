@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display inline block</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        margin-top: 20px;
+        background-color: yellowgreen;
+
+        display: inline-block;
+      }
+
+
+      span{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello I am box 1</div>
+    <div class="box">Hello I am box 2</div>
+    <div class="box">Hello I am box 2</div>
+    <div class="box">Hello I am box 2</div>
+    <div class="box">Hello I am box 2</div>
+    <div class="box">Hello I am box 2</div>
+
+
+
+    <span>Hello I am span</span>
+    <span>Hello I am span</span>
+    <span>Hello I am span</span>
+    <span>Hello I am span</span>
+    <span>Hello I am span</span>
+    <span>Hello I am span</span>
+  </body>
+</html>

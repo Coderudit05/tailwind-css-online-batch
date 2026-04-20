@@ -3,27 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bongo IT</title>
+    <title>Document</title>
     <link rel="stylesheet" href="output.css" />
-
-    <!-- Font Awesome -->
+    <!-- font awesome icon here -->
     <script
       src="https://kit.fontawesome.com/f12c1313f0.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body class="font-[Inter] text-gray-900 bg-blue-950">
-    <!-- NAVBAR -->
+
+  <body class="bg-white">
     <nav class="border border-gray-500/20 h-16 bg-white">
       <div
-        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between"
       >
-        <!-- Logo  -->
+        <!-- Logo -->
         <h1
           class="text-xl font-bold text-blue-600 flex items-center gap-2 cursor-pointer"
         >
@@ -44,14 +38,22 @@
         </h1>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center justify-center space-x-6">
-          <a href="#" class="hover:text-blue-600 duration-300 ease-in-out"
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="hover:text-blue-600 transition duration-300"
             >Home</a
           >
-          <a href="#" class="hover:text-blue-600">Services</a>
-          <a href="#" class="hover:text-blue-600">About</a>
-          <a href="#" class="hover:text-blue-600">Features</a>
-          <a href="#" class="hover:text-blue-600">Testimonials</a>
+          <a href="#" class="hover:text-blue-600 transition duration-300"
+            >Services</a
+          >
+          <a href="#" class="hover:text-blue-600 transition duration-300"
+            >About</a
+          >
+          <a href="#" class="hover:text-blue-600 transition duration-300"
+            >Features</a
+          >
+          <a href="#" class="hover:text-blue-600 transition duration-300"
+            >Testimonials</a
+          >
 
           <button
             class="bg-blue-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:shadow-2xl hover:shadow-blue-600 duration-300 hover:scale-105"
@@ -61,72 +63,376 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="flex md:hidden">
+        <div class="flex md:hidden text-xl">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <section
-      class="relative max-w-7xl min-h-[calc(100vh-64px)] mx-auto flex items-center px-4"
-    >
-      <div class="grid lg:grid-cols-2 gap-10 w-full h-[70vh]">
-        <!-- Left Content -->
-        <div class="flex flex-col items-start gap-6">
+    <!-- Hero Section -->
+    <section class="min-h-[calc(100vh-64px)] bg-[#071126] flex items-center">
+      <div
+        class="max-w-7xl w-full mx-auto grid lg:grid-cols-2 place-items-center px-10 py-6"
+      >
+        <!-- left section of hero -->
+        <div class="flex flex-col gap-4 items-center lg:items-start">
           <div
-            class="flex items-center justify-center gap-2 bg-blue-50 w-fit px-4 py-2 rounded-full mx-auto lg:mx-0"
+            class="flex items-center gap-2 border-gray-500 text-[#8ECDFF] bg-[#1E2B47] max-w-xl text-center px-4 py-2 rounded-full"
           >
-            <span class="h-3 w-3 bg-green-400 rounded-full"></span>
-            <span>Empowering Digital Transformation</span>
+            <span
+              class="hidden md:flex h-2 w-2 bg-green-400 rounded-full"
+            ></span>
+            <span class="text-lg">Empowering Digital Transformation </span>
           </div>
 
           <h1
-            class="text-5xl lg:text-6xl xl:text-7xl font-black text-white text-center lg:text-start max-w-3xl mx-auto"
+            class="text-5xl lg:text-7xl text-white font-extrabold text-center lg:text-left"
           >
-            We Build <span class="gradient-text">Digital</span> Experiences That
-            <span class="gradient-text">Matter</span>
+            We Build <span>Digital</span> <br />
+            Experiences <br />
+            That <span>Matter</span>
           </h1>
-          <p
-            class="text-base sm:text-xl text-gray-400 mx-auto text-center lg:text-left max-w-3xl"
-          >
+
+          <p class="text-[#9CA3AF] max-w-lg text-center lg:text-left">
             Bongo IT delivers cutting-edge software solutions, cloud
             infrastructure, and AI-powered products that drive growth for
             businesses worldwide.
           </p>
 
-          <div class="flex flex-col sm:flex-row items-center mx-auto gap-4">
-            <button class="bg-blue-600 px-6 py-4 rounded-full cursor-pointer text-white flex items-center gap-2 w-">
+          <div
+            class="flex gap-2 flex-wrap items-center justify-center lg:justify-start"
+          >
+            <button class="bg-[#1A6DF5] px-4 py-3 rounded-full text-white">
               Start Your Project <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <button class="bg-gray-800 border border-gray-700 px-6 py-4 rounded-full cursor-pointer text-white flex items-center gap-2 w-">
-              <i class="fa-solid fa-circle-play"></i> Watch Demo
+            <button class="bg-[#273865] px-4 py-3 rounded-full text-white">
+              Watch Demo <i class="fa-solid fa-circle-play"></i>
             </button>
           </div>
+
+          <div
+            class="text-[#9CA3AF] flex flex-col py-4 text-center lg:text-left"
+          >
+            <p>Trusted by innovative companies</p>
+            <div
+              class="flex flex-wrap items-center justify-center py-2 gap-2 text-xl"
+            >
+              <span
+                class="bg-gray-400/20 px-3 py-2 rounded-full text-white cursor-pointer"
+                >TechCorp</span
+              >
+              <span
+                class="bg-gray-400/20 px-3 py-2 rounded-full text-white cursor-pointer"
+                >DataFlow</span
+              >
+              <span
+                class="bg-gray-400/20 px-3 py-2 rounded-full text-white cursor-pointer"
+                >CloudNex</span
+              >
+              <span
+                class="bg-gray-400/20 px-3 py-2 rounded-full text-white cursor-pointer"
+                >InnoLab</span
+              >
+            </div>
+          </div>
         </div>
+        <!-- right section of hero -->
+        <div class="">
+          <div class="hidden lg:flex justify-center">
+            <div class="relative">
+              <!-- Main Card -->
+              <div
+                class="w-72 h-72 bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/20 shadow-xl"
+              >
+                <div
+                  class="w-full h-full bg-gradient-to-br from-blue-500/20 to-blue-700/20 rounded-2xl flex flex-col items-center justify-center gap-6"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-code text-white text-xl"></i>
+                  </div>
 
-        <!-- Right Content -->
+                  <!-- Text -->
+                  <div class="text-center">
+                    <p class="text-white font-bold text-lg">Smart Solutions</p>
+                    <p class="text-gray-400 text-sm mt-1">
+                      Built for the future
+                    </p>
+                  </div>
 
-        <div class=""></div>
+                  <!-- Code Box -->
+                  <div
+                    class="w-full bg-black/40 rounded-lg p-3 text-xs font-mono"
+                  >
+                    <p class="text-green-400">const future = await build();</p>
+                    <p class="text-gray-500 mt-1">// Your success, our code</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Top Right Badge -->
+              <div
+                class="absolute -top-4 -right-4 bg-white/10 backdrop-blur-lg px-4 py-2 rounded-xl border border-white/20"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-6 h-6 bg-green-500/20 rounded-md flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-check text-green-400 text-xs"></i>
+                  </div>
+                  <span class="text-white text-xs font-medium"
+                    >99.9% Uptime</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bottom Left Badge -->
+              <div
+                class="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-lg px-4 py-2 rounded-xl border border-white/20"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-6 h-6 bg-blue-500/20 rounded-md flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-trend-up text-blue-400 text-xs"
+                    ></i>
+                  </div>
+                  <span class="text-white text-xs font-medium"
+                    >+200% Growth</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section></section>
+    <!-- Services Section -->
+    <section class="flex flex-col gap-6 items-center min-h-screen py-20">
+      <h3 class="bg-[#D9EDFF] text-[#1A6DF5] px-4 py-2 rounded-full font-bold">
+        Our Services
+      </h3>
+      <h2 class="text-5xl font-bold text-center">
+        Solutions That Drive <span>Results</span>
+      </h2>
+      <p class="text-[#9CA3AF] text-xl max-w-3xl text-center">
+        We offer comprehensive IT services tailored to your business needs, from
+        concept to deployment and beyond.
+      </p>
 
-    <!-- ABOUT -->
-    <section></section>
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10"
+      >
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#3377F2] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-code text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl text-center">Web Development</h3>
+          <p class="text-black/60 text-lg text-center">
+            Custom web applications built with modern frameworks, optimized for
+            performance and scalability.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#07ABCA] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-mobile-screen-button text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl">Mobile Apps</h3>
+          <p class="text-black/60 text-lg">
+            Native and cross-platform mobile applications that deliver seamless
+            user experiences on every device.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#07ABCA] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-cloud text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl">Cloud Solutions</h3>
+          <p class="text-black/60 text-lg">
+            Scalable cloud infrastructure, migration services, and DevOps
+            automation for modern enterprises.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F7900F] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-microchip text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl">AI & Machine Learning</h3>
+          <p class="text-black/60 text-lg">
+            Intelligent automation, predictive analytics, and custom AI models
+            to give your business a competitive edge.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#14AD64] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-shield-halved text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl">Cybersecurity</h3>
+          <p class="text-black/60 text-lg">
+            Comprehensive security audits, penetration testing, and 24/7 threat
+            monitoring to protect your assets.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="h-80 w-80 shadow-md shadow-black rounded-xl p-6 flex flex-col relative gap-2 group hover:shadow-lg cursor-pointer transition-transform duration-300"
+        >
+          <span
+            class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EA3668] group-hover:scale-110 transition-transform duration-300"
+          >
+            <i class="fa-solid fa-palette text-xl text-white"></i>
+          </span>
+          <h3 class="font-bold text-2xl">UI/UX Design</h3>
+          <p class="text-black/60 text-lg">
+            Human-centered design that creates intuitive, beautiful interfaces
+            your users will love.
+          </p>
+          <a
+            class="absolute bottom-10 left-6 text-[#1A6DF7] group-hover:text-[#0a4fcc] group-hover:translate-x-1 transition-transform duration-300"
+            href=""
+            >Learn More <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
 
-    <!-- FEATURES -->
-    <section></section>
+    <!--  -->
+    <section
+      class="flex flex-col items-center min-h-screen py-20 bg-[#12234E] gap-4"
+    >
+      <h3 class="bg-[#D9EDFF] text-[#1A6DF5] px-4 py-2 rounded-full font-bold">
+        Why choose Us
+      </h3>
+      <h2 class="text-5xl font-bold text-center text-white px-4">
+        Built Different, <span>Deliver Better</span>
+      </h2>
+      <p class="text-xl max-w-4xl text-center text-white/50 capitalize px-4">
+        Our unique approach combines cutting-edge technology with deep industry
+        expertise.
+      </p>
 
-    <!-- TESTIMONIALS -->
-    <section></section>
-
-    <!-- CONTACT -->
-    <section></section>
-
-    <!-- FOOTER -->
-    <footer></footer>
+      <div
+        class="grid md:grid-cols-1 lg:grid-cols-2 w-full lg:max-w-7xl mx-auto mt-16 gap-4 px-4"
+      >
+        <div
+          class="w-full p-4 flex gap-4 items-center bg-[#233258] rounded-xl"
+        >
+          <span
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#469BFC]"
+          >
+            <i class="fa-solid fa-bolt text-white text-xl"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-semibold text-white">
+              Lightning Fast Delivery
+            </h3>
+            <p class="text-lg text-white/50 leading-5">
+              Our streamlined processes and experienced team enable rapid
+              development without compromising quality.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full p-4 flex gap-4 items-center bg-[#233258] rounded-xl"
+        >
+          <span
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#993EED]"
+          >
+            <i class="fa-solid fa-layer-group text-white text-xl"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-semibold text-white">
+              Scalable Architecture
+            </h3>
+            <p class="text-lg text-white/50 leading-5">
+              Built to grow with your business. Our solutions handle millions of
+              users effortlessly.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full p-4 flex gap-4 items-center bg-[#233258] rounded-xl"
+        >
+          <span
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#2BC582]"
+          >
+            <i class="fa-solid fa-users text-white text-xl"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-semibold text-white">Dedicated Team</h3>
+            <p class="text-lg text-white/50 leading-5">
+              Work directly with senior engineers who are invested in your
+              project's success from day one.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full p-4 flex gap-4 items-center bg-[#233258] rounded-xl"
+        >
+          <span
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#FBAC21]"
+          >
+            <i class="fa-solid fa-coins text-white text-xl"></i>
+          </span>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-xl font-semibold text-white">
+              Cost-Effective Solutions
+            </h3>
+            <p class="text-lg text-white/50 leading-5">
+              Enterprise-grade quality at competitive prices. Maximize ROI with
+              our optimized processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
