@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            padding: 10px 20px;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 20px ;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .btn:active{
+            background-color: red;
+        }
+
+        input:focus{
+            background-color: green;
+        }
+
+        a:visited{
+            color: rgb(51, 128, 0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="btn">Hover Me</button>
+
+    <input type="text" placeholder="Enter Your Name">
+
+    <a href="#">Click me</a>
+    
+</body>
+</html>
