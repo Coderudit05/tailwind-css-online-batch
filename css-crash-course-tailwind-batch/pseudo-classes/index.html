@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html,body{
+
+        html,
+        body {
             height: 100%;
             width: 100%;
         }
 
-        .btn{
-            position: absolute;
-            top: 40%;
-            left: 40%;
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
             padding: 10px 20px;
-            background-color: aquamarine;
+            border-radius: 20px;
             border: none;
-            border-radius: 20px ;
+            background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
             cursor: pointer;
-        }
-
-        .btn:hover{
-            background-color: black;
             color: white;
+            font-size: 20px;
         }
 
-        .btn:active{
-            background-color: red;
+        .btn1:hover{
+            background: linear-gradient(to right, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
         }
 
-        input:focus{
-            background-color: green;
+
+        .btn2:active{
+            background-color: aqua;
         }
 
-        a:visited{
-            color: rgb(51, 128, 0);
-        }
-
+       
     </style>
 </head>
+
 <body>
 
-    <button class="btn">Hover Me</button>
+    <button class="btn1">Hover Me</button>
 
-    <input type="text" placeholder="Enter Your Name">
+    <button class="btn2">Click me</button>
 
-    <a href="#">Click me</a>
-    
+
+   
+
 </body>
+
 </html>

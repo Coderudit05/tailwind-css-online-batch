@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* h1::before{
+            content: '<';
+        }
+
+        h1::after{
+            content: '>';
+        } */
+
+
+        /* h1{
+            text-decoration: underline;
+        } */
+
+        h1 {
+            /* background-color: yellowgreen; */
+            display: inline-block;
+            position: relative;
+        }
+
+        h1::before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+            position: absolute;
+
+            left: 0;
+            bottom: 40%;
+            width: 35%;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello this is H1</h1>
+
+</body>
+
+</html>
