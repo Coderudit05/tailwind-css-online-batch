@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+
+        body{
+            padding: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 50px;
+        }
+
+        div{
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            box-shadow: 0px 0px 4px black;
+            
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            
+            /* transform: scale(0.5); */
+        }
+
+        #box1:hover{
+            transform: scale(1.2) skew(20deg,50deg);
+            box-shadow: 0px 0px 10px black;
+        }
+
+
+        #box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(186, 61, 165);
+        }
+        #box3{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(195, 156, 65);
+        }
+        #box4{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(51, 40, 199);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    
+</body>
+</html>

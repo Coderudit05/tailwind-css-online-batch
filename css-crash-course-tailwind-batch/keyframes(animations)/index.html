@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+
+            animation-name: box-anime;
+            animation-duration: 4s;
+            animation-delay: 4s;
+        }
+
+
+        /* @keyframes box-anime {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: brown;
+                
+                }
+                } */
+
+        @keyframes box-anime {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(500px);
+                background-color: brown;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>
