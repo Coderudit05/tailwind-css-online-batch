@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
+}
+
+header {
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0px 0px 10px black;
+
+}
+
+
+
+.nav-wrapper {
+    /* background-color: purple; */
+    max-width: 1300px;
+    margin: 0px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.nav-wrapper h1 {
+    color: white;
+    background: linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    animation-name: nav-anime;
+    animation-duration: 1s;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    position: relative;
+}
+
+nav a:nth-child(1){
+    animation-name: nav-anime;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+}
+nav a:nth-child(2){
+    animation-name: nav-anime;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+nav a:nth-child(3){
+    animation-name: nav-anime;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+}
+nav a:nth-child(4){
+    animation-name: nav-anime;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+nav a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60));
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    transition: width 0.3s ease-in-out;
+
+
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+.nav-btns {}
+
+.nav-btns button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.nav-btns button:nth-child(1) {
+    background: linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60));
+    border: none;
+    color: white;
+    animation: nav-anime 1s 0.4s;
+}
+
+.nav-btns button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid indianred;
+    color: white;
+    animation: nav-anime 1s;
+    animation-delay: 0.6s;
+}
+
+
+@keyframes nav-anime {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        
+        transform: translateY(0px);
+    }
+}
+
+
