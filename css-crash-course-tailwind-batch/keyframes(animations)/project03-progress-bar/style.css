@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(168, 206, 194);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 250px;
+    width: 400px;
+    border-radius: 20px ;
+    background-color: white;
+    
+    padding: 20px 10px;
+}
+.box h1{
+    text-align: center;
+
+}
+
+.progressbar-element{
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 50px;
+
+    position: relative;
+
+}
+
+
+.progressbar-element::before{
+
+    content: '0%';
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.progressbar-element::after{
+    content: '100%';
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.progress{
+    height: 100%;
+    width: 0%;
+    background-color: greenyellow;
+
+    animation: progress-anime 10s ;
+}
+
+@keyframes progress-anime {
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 10%;
+    }
+    30%{
+        width: 20%;
+    }
+    40%{
+        width: 30%;
+    }
+    50%{
+        width: 40%;
+    }
+    60%{
+        width: 50%;
+    }
+    70%{
+        width: 60%;
+    }
+    80%{
+        width: 70%;
+    }
+    90%{
+        width: 80%;
+    }
+    100%{
+        width: 100%;
+    }
+}
