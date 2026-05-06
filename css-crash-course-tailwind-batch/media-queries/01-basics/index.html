@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+        }
+
+        .page1{
+            min-height: 100vh;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+            flex-shrink: 0;
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="page1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+  </body>
+</html>
