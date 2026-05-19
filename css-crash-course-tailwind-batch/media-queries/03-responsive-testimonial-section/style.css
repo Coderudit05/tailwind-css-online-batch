@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.testimonials{
+    min-height: 100vh;
+    /* background-color: yellowgreen; */
+    padding: 20px;
+
+}
+
+.testimonials .wrapper{
+    /* background-color: white; */
+    /* width: 1400px; */
+    max-width: 1200px;
+    /* background-color: indianred; */
+    margin: 40px auto;
+
+}
+
+.wrapper h2{
+    text-align: center;
+    font-size: 40px;
+}
+.wrapper .cards{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    height: 250px;
+    width: 300px;
+    background-color: red;
+
+    /* flex-shrink: 0; */
+}
