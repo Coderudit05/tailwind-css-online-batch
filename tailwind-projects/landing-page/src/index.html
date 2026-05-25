@@ -284,17 +284,17 @@
 
     <footer class="mb-20">
       <div
-        class="flex gap-4 items-center justify-between max-w-5xl py-6 px-4 mx-auto bg-[#FEF8F2]"
+        class="flex flex-col sm:flex-row gap-4 items-center justify-between max-w-5xl py-6 px-4 mx-auto bg-[#FEF8F2] px-6"
       >
-        <div class="flex items-center justify-center gap-6">
+        <div class="flex  items-center justify-center gap-6">
           <div
-            class="bg-[#FDEAD7] rounded-full h-30 w-30 flex items-center justify-center"
+            class="bg-[#FDEAD7] rounded-full h-16 w-16 sm:h-20 sm:w-20 shrink-0 md:h-30 md:w-30 flex items-center justify-center"
           >
-            <i class="fa-solid fa-envelope text-5xl text-orange-400"></i>
+            <i class="fa-solid fa-envelope sm:text-3xl md:text-5xl text-orange-400 shrink-0"></i>
           </div>
           <div class="">
-            <h3 class="font-bold text-3xl">Let's work together</h3>
-            <p class="text-lg text-black/80 leading-tight">
+            <h3 class="font-bold text-lg md:text-3xl">Let's work together</h3>
+            <p class="md:text-lg text-black/80 leading-tight">
               Subscribe our newsletter to get our regular <br />
               updates and offers.
             </p>
@@ -306,7 +306,7 @@
             class="bg-white border border-black/50 px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i class="fa-solid fa-envelope text-orange-400"></i>
-            <input type="text" class="flex-1" placeholder="Enter Your Email" />
+            <input type="text" class="md:flex-1" placeholder="Enter Your Email" />
             <button
               class="bg-[#FE8804] text-white px-4 py-2 text-[16px] rounded-lg cursor-pointer"
             >
@@ -315,16 +315,18 @@
           </div>
         </div>
       </div>
-      <div class="max-w-5xl mx-auto px-2 py-1 flex items-center justify-between">
-        <div class="">
-          <img src="../assets/img5.png" alt="" class="h-20" />
-          <p class="max-w-sm">
+      <div
+        class="max-w-5xl mx-auto px-2 py-1 flex flex-col sm:flex-row sm:flex-wrap items-start justify-between"
+      >
+        <div class="flex flex-col gap-1 shrink-0">
+          <img src="../assets/img5.png" alt="" class="sm:h-16" />
+          <p class="max-w-sm text-center mx-auto md:text-left capitalize">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, iste.
             Molestias fugiat aperiam, quam alias perferendis officiis dolorum
             molestiae earum porro modi neque voluptatibus deserunt veniam
             facilis? Ducimus, molestiae consectetur?
           </p>
-          <span class="flex py-2 text-3xl">
+          <span class="flex justify-center gap-8 py-2 text-3xl mt-2 mb-6">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-linkedin"></i>
@@ -332,7 +334,7 @@
           </span>
         </div>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col mb-6 shrink-0 ">
           <h3 class="font-bold">Quick Links</h3>
           <div class="flex flex-col">
             <a href="#">Home</a>
@@ -343,7 +345,7 @@
             <a href="#">Contact Us</a>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col mb-6 shrink-0">
           <h3 class="font-bold">Quick Links</h3>
           <div class="flex flex-col">
             <a href="#">Home</a>
@@ -354,7 +356,7 @@
             <a href="#">Contact Us</a>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col mb-6 shrink-0 bg-purple-500">
           <h3 class="font-bold">Quick Links</h3>
           <div class="flex flex-col">
             <a href="#">Home</a>
@@ -365,7 +367,7 @@
             <a href="#">Contact Us</a>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col shrink-0 ">
           <h3 class="font-bold">Quick Links</h3>
           <div class="flex flex-col">
             <a href="#">Home</a>
