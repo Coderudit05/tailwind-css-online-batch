@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body>
+
+    <div id="page" class="h-screen bg-black text-white ">
+        <header class="">
+            <div id="navbar" class="flex items-center h-16 justify-between max-w-7xl mx-auto px-6">
+                <h2 id="logo"
+                    class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">
+                    MyDev.</h2>
+                <nav class="flex gap-6">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Work</a>
+                </nav>
+
+                <div id="nav-btns" class="flex items-center gap-3">
+
+                    <!-- Login Button with Gradient Border -->
+                    <div class="nav-btn p-[2px] rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+                        <button class="px-4 py-2 text-lg rounded-md bg-black text-white">
+                            Login
+                        </button>
+                    </div>
+
+                    <!-- Normal Signup Button -->
+                    <button class="nav-btn px-4 py-2 text-lg rounded-md text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+                        Signup
+                    </button>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>
