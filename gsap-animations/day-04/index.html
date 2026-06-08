@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/f12c1313f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#060C10] text-white">
+    <header class="">
+      <div class="flex items-center justify-between max-w-7xl mx-auto h-16">
+        <div id="logo">
+          <h2 class="text-3xl font-bold">
+            <span class="text-[#26AE5F]">A</span>LPHA
+          </h2>
+        </div>
+
+        <nav class="flex items-center gap-10">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Service</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div id="nav-btn">
+          <button
+            class="bg-[#26AE5F] px-4 py-2 rounded-lg cursor-pointer flex items-center gap-2"
+          >
+            Get In Touch <i class="fa-solid fa-right-long hover:text-black"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="min-h-[calc(100vh-64px)] flex items-center">
+      <div id="hero-wrapper" class="flex max-w-7xl mx-auto">
+        <!-- Left Section -->
+        <div class="flex flex-col gap-6">
+          <span id="hero-status" class="border-2 border-[#28AF62] px-4 py-1 rounded-full w-fit"
+            ><i class="fa-solid fa-wand-magic-sparkles text-[#28AF62]"></i>
+            AI-Powered Solution</span
+          >
+          <h1 id="hero-heading" class="text-6xl uppercase">Grow your digital <br />Creative <span class="text-[#28AF62] font-bold ">Agency</span></h1>
+
+          <p id="hero-para" class="text-white/70 capitalize ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+            officia itaque? Eligendi molestiae ipsam nulla totam qui commodi,
+            quos, laboriosam libero earum eaque mollitia omnis!
+          </p>
+
+          <div id="hero-btns" class="flex gap-10">
+            <button class="bg-[#28AF62] px-6 py-2 rounded-md cursor-pointer">Explore Services</button>
+            <button class="border-2 border-[#28AF62] px-6 py-2 rounded-md cursor-pointer">Our Work</button>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div class="">
+          <div id="hero-img">
+            <img src="./assets/hero-logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
