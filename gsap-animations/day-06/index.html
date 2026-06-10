@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#101828] text-white">
+    <header
+      class="flex h-16 border-b border-gray-700 items-center justify-between px-10"
+    >
+      <h2 id="logo" class="text-4xl">Logo</h2>
+      <nav class="flex gap-6">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </nav>
+    </header>
+
+    <section
+      id="hero"
+      class="h-[calc(100vh-64px)] flex items-center justify-center"
+    >
+      <div class="hero-wrapper overflow-hidden">
+        <h1 id="text1" class="text-7xl text-center">Hello Everyone</h1>
+        <div class="inner-text flex gap-6">
+          <h1 id="text2" class="text-7xl">Scroll Down</h1>
+          <h1 id="text3" class="text-7xl">to See More</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="h-screen flex flex-col items-center justify-center">
+      <h1 class="text-7xl">Enjoy the Animation</h1>
+      <div id="sec2-text" class="flex gap-6 text-7xl">
+        <span id="t1" class="">Have a</span>
+        <span id="t2" class="">Great Day</span>
+      </div>
+    </section>
+
+    <section id="section3" class="h-screen"></section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
