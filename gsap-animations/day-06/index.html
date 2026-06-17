@@ -6,6 +6,25 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+
+  <style>
+    footer {
+      height: 500px;
+      background: #4c4393;
+
+      clip-path: polygon(
+        0 10%,
+        15% 14%,
+        35% 17%,
+        50% 18%,
+        65% 17%,
+        85% 14%,
+        100% 10%,
+        100% 100%,
+        0 100%
+      );
+    }
+  </style>
   <body class="bg-[#101828] text-white">
     <header
       class="flex h-16 border-b border-gray-700 items-center justify-between px-10"
@@ -32,7 +51,10 @@
       </div>
     </section>
 
-    <section id="section2" class="h-screen flex flex-col items-center justify-center">
+    <section
+      id="section2"
+      class="h-screen flex flex-col items-center justify-center"
+    >
       <h1 class="text-7xl">Enjoy the Animation</h1>
       <div id="sec2-text" class="flex gap-6 text-7xl">
         <span id="t1" class="">Have a</span>
@@ -41,6 +63,48 @@
     </section>
 
     <section id="section3" class="h-screen"></section>
+    <footer id="" class="flex items-center justify-between px-20 ">
+      <div id="col1" class="flex flex-col gap-6">
+        <h2 class="text-4xl font-bold">market<span class="text-[#EFA7D9]">iva.</span></h2>
+        <p class="max-w-xs text-lg ">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          totam sunt libero, delectus molestiae repellendus eum. Velit ipsum
+          aliquid reiciendis.
+        </p>
+        <div id="col1-icons" class="flex gap-6">
+          <span class="bg-white w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-black font-bold">IG</span>
+          <span class="bg-white w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-black font-bold">FB</span>
+          <span class="bg-white w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-black font-bold">TW</span>
+        </div>
+      </div>
+      <div id="col2">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="#">About Us </a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Projects </a></li>
+          <li><a href="#">Blog & Updates</a></li>
+        </ul>
+      </div>
+      <div id="col3">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="#">About Us </a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Projects </a></li>
+          <li><a href="#">Blog & Updates</a></li>
+        </ul>
+      </div>
+      <div id="col4">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="#">About Us </a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Projects </a></li>
+          <li><a href="#">Blog & Updates</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"

@@ -86,6 +86,56 @@ function sec2Anime() {
   });
 }
 
+function footerAnime() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "footer",
+      scroller: "body",
+      markers: true,
+      start : 'top 70%'
+      // end: "top 30%",
+
+      // scrub: true,
+      // scale: 2,
+    },
+  });
+
+  tl.from("#col1", {
+    y: 200,
+    opacity: 0,
+    duration: 0.8,
+  });
+  tl.from(
+    "#col2",
+    {
+      y: 200,
+      opacity: 0,
+      duration: 0.8,
+    },
+    "-=0.5",
+  );
+  tl.from(
+    "#col3",
+    {
+      y: 200,
+      opacity: 0,
+      duration: 0.8,
+    },
+    "-=0.5",
+  );
+  tl.from(
+    "#col4",
+    {
+      y: 200,
+      opacity: 0,
+      duration: 0.8,
+    },
+    "-=0.5",
+  );
+}
+
 headerAnime();
 heroTextAnime();
 sec2Anime();
+
+footerAnime();
